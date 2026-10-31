@@ -1,0 +1,180 @@
+
+/* ---------- Global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 25px;
+    color: #142d4e;
+    margin: 35px 0 20px;
+    font-weight: 700;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+    background-color: #087e8b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background-color: #06636d;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Product Grid ---------- */
+
+#products,
+#cart-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+}
+
+
+/* ---------- Product Card ---------- */
+
+.product-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+    transition: 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.10);
+}
+
+
+/* ---------- Product Image ---------- */
+
+.product-card img {
+    width: 150px;
+    height: 160px;
+    object-fit: contain;
+    margin: 18px 0;
+}
+
+
+/* ---------- Product Information ---------- */
+
+.product-card h3 {
+    color: #142d4e;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 48px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+/* ---------- Cart Count ---------- */
+
+#cart-count {
+    display: inline-block;
+    background-color: #e0f2f1;
+    color: #087e8b;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* ---------- Total Price ---------- */
+
+#total-price {
+    display: inline-block;
+    background-color: #142d4e;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 7px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    #products,
+    #cart-products {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        padding: 11px 18px;
+    }
+
+}
